@@ -1,0 +1,163 @@
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.formulario-container {
+    background-color: #fff;
+    text-align: center;
+    width: 50%; /* Utiliza un valor relativo */
+    max-width: 550px; /* Utiliza un valor absoluto máximo */
+    margin: 10% auto 0; /* Centra vertical y horizontalmente, y ajusta el margen superior */
+    padding: 5%;
+  margin-left: 220px;
+}
+
+.formulario-container h4 {
+    font-size: 20px;
+    color: #666666;
+    margin-top: 20px;
+  margin-right: 70px;
+}
+
+input {
+    padding: 15px;
+    width: 90%;
+    max-width: 530px; /* Establece un máximo absoluto */
+    border: solid 1px #85000a;
+    background-color: #f9f0f1;
+    margin-top: 20px;
+}
+
+img {
+    background-color: #fff;
+    padding: 19px;
+    max-width: 130%;
+  width:250px;
+  
+    
+}
+
+.fon {
+    background-color: #fff;
+    padding: 10px;
+    width: 105%;
+  
+    
+}
+
+button {
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 240px; /* Establece un máximo absoluto */
+    height: 57px;
+    background-color: #ed7f88;
+    color: #ffffff;
+    border: solid 1px #ed7f88;
+    margin-top: 80px;
+    font-size: 25px;
+  margin-left: 215px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 1.2em;
+    padding: 0 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+    margin-bottom: 20px;
+  margin-right: 250px;
+}
+.formulario-container hr{
+  margin-top: 30px;
+}
+h2 {
+    font-size: 25px;
+    color: #666666;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  margin-right: 260px;
+}
+
+.etiqueta {
+    font-size: 20px;
+    color: darkgray;
+    margin-top: 20px;
+  margin-left: 260px;
+}
+
+.etiqueta a {
+    color: darkgray;
+}
+
+.palabra-en-lineas span {
+    font-size: 27px;
+    display: inline-block;
+    background-color: grey;
+    color: white;
+    
+    
+    padding: 10px 20px;
+}
+
+.palabra-en-lineas {
+    background-color: grey;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+  width:105%;
+}
+
+.palabra-en-line span {
+    font-size: 22px;
+    background-color: #666666;
+    color: white;
+    display: inline-block;
+  
+    
+  
+    
+    
+}
+
+.palabra-en-line {
+    background-color: #666666;
+    text-align: center;
+    width: 104%;
+    font-size: 100px;
+    padding: 20px;
+  
+    
+}
+
+.line-name {
+    background-color: #e3e3e3;
+    width: 104%; /* Utiliza el ancho completo del contenedor */
+    padding: 20px;
+    font-size: 20px;
+    margin-top: -15px;
+}
+
+.palabra-en-lineas span i {
+    margin-right: 5px;
+}
+
+.abajo span {
+    display: inline-block; /* Cambiado a bloque para que cada elemento esté en una línea */
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center; /* Centra el texto */
+  margin-left: 20px;
+}
+.palabra-en-line h3{
+  margin-left: 650px;
+  font-size: 15px;
+  color:white;
+  margin-top: -50px;
+}

